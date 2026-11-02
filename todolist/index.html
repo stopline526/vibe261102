@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>오늘의 할일</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <h1>오늘의 할일</h1>
+      <p class="date" id="date"></p>
+      <div class="progress" id="progress" role="progressbar" aria-label="오늘 진행률" aria-valuemin="0">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <p class="status" id="status" aria-live="polite"></p>
+    </header>
+
+    <p class="banner banner-warning" id="storage-warning" role="alert" hidden>이 브라우저에서는 저장되지 않아요</p>
+
+    <section class="banner" id="overdue" aria-label="지난 할일" hidden>
+      <p id="overdue-text"></p>
+      <div class="banner-actions">
+        <button type="button" class="button button-primary" id="overdue-import">오늘로 가져오기</button>
+        <button type="button" class="button" id="overdue-discard">버리기</button>
+      </div>
+    </section>
+
+    <form class="add-form" id="add-form" autocomplete="off">
+      <input type="text" id="add-input" maxlength="200" placeholder="할일을 입력하세요..." aria-label="새 할일" enterkeyhint="done">
+      <button type="submit" class="button button-primary">추가</button>
+    </form>
+
+    <div class="filters" id="filters" role="group" aria-label="목록 필터">
+      <button type="button" class="filter" data-filter="all" aria-pressed="true">전체</button>
+      <button type="button" class="filter" data-filter="active" aria-pressed="false">진행 중</button>
+      <button type="button" class="filter" data-filter="completed" aria-pressed="false">완료</button>
+    </div>
+
+    <ul class="list" id="list"></ul>
+    <p class="empty" id="filter-empty" hidden>해당하는 할일이 없어요</p>
+  </main>
+
+  <div class="toast" id="toast" role="status" hidden>
+    <span id="toast-text"></span>
+    <button type="button" class="toast-undo" id="toast-undo">실행 취소</button>
+  </div>
+</body>
+</html>
