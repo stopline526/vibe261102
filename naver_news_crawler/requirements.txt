@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+openpyxl
+PyQt6
+pyinstaller
+pillow
