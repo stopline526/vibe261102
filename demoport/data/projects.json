@@ -1,0 +1,26 @@
+[
+  {
+    "title": "업무 자동화 스크립트",
+    "description": "반복적인 파일 정리와 엑셀 보고서 작성을 자동화한 Python 스크립트입니다.",
+    "tags": ["Python", "Automation"],
+    "thumbnail": "",
+    "github": "#",
+    "demo": ""
+  },
+  {
+    "title": "개발자 프로필 사이트",
+    "description": "시맨틱 HTML5와 반응형 CSS로 만든 개인 포트폴리오 웹사이트입니다.",
+    "tags": ["HTML5", "CSS3", "JavaScript"],
+    "thumbnail": "",
+    "github": "#",
+    "demo": "#"
+  },
+  {
+    "title": "데이터 수집·시각화 도구",
+    "description": "공개 데이터를 수집해 정리하고 웹 페이지에 차트로 보여주는 프로젝트입니다.",
+    "tags": ["Python", "HTML5", "Data"],
+    "thumbnail": "",
+    "github": "#",
+    "demo": ""
+  }
+]

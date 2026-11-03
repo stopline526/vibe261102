@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stopline | Python & HTML5 Developer</title>
+  <meta name="description" content="Python과 HTML5를 주력으로 하는 개발자 stopline의 프로필 웹사이트입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="stopline | Python & HTML5 Developer">
+  <meta property="og:description" content="Python과 HTML5를 주력으로 하는 개발자 프로필">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // 첫 렌더 전에 저장된 테마를 적용해 깜빡임 방지
+    try {
+      const saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.dataset.theme = saved;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="주요 메뉴">
+      <a class="logo" href="#hero">stopline<span>.dev</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="다크/라이트 모드 전환">
+            <span class="icon-sun" aria-hidden="true">☀</span>
+            <span class="icon-moon" aria-hidden="true">☾</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-title">stopline</h1>
+        <p class="hero-subtitle"><strong>Python</strong> &amp; <strong>HTML5</strong> 개발자</p>
+        <p class="hero-desc">데이터를 다루는 백엔드 로직부터 웹 표준을 지키는 프론트엔드까지,<br class="br-desktop">단단하고 읽기 쉬운 코드를 만듭니다.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
+          <a class="btn btn-outline" href="#contact">연락하기</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>안녕하세요. Python과 HTML5를 주력으로 개발하는 <strong>stopline</strong>입니다.</p>
+            <p>자동화 스크립트, 데이터 처리, 웹 애플리케이션 개발에 관심이 많으며, 문제를 단순하게 풀어내는 것을 좋아합니다.</p>
+            <p>시맨틱 마크업과 접근성을 고려한 웹, 그리고 유지보수하기 쉬운 Python 코드를 지향합니다.</p>
+          </div>
+          <ul class="about-facts">
+            <li><span class="fact-label">주 분야</span><span>Python, HTML5</span></li>
+            <li><span class="fact-label">관심사</span><span>자동화, 웹 개발, 데이터 처리</span></li>
+            <li><span class="fact-label">이메일</span><a href="mailto:stopline526@gmail.com">stopline526@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <h3 class="skills-heading">주력</h3>
+        <div class="skills-main">
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">Py</div>
+            <h4>Python</h4>
+            <p>스크립트 자동화, 데이터 처리, 웹 백엔드</p>
+            <div class="skill-bar" role="img" aria-label="숙련도 90%"><span style="--level: 90%"></span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">5</div>
+            <h4>HTML5</h4>
+            <p>시맨틱 마크업, 웹 접근성, 반응형 구조</p>
+            <div class="skill-bar" role="img" aria-label="숙련도 90%"><span style="--level: 90%"></span></div>
+          </article>
+        </div>
+        <h3 class="skills-heading">보조</h3>
+        <ul class="skill-badges">
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>JSON</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid" id="project-grid" aria-live="polite">
+          <p class="project-status">프로젝트를 불러오는 중…</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-desc">함께 일하거나 이야기 나누고 싶다면 언제든 연락 주세요.</p>
+        <div class="contact-box">
+          <a class="contact-email" href="mailto:stopline526@gmail.com">stopline526@gmail.com</a>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:stopline526@gmail.com">메일 보내기</a>
+            <button class="btn btn-outline" id="copy-email" data-email="stopline526@gmail.com">주소 복사</button>
+          </div>
+          <p class="copy-feedback" id="copy-feedback" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> stopline. All rights reserved.</p>
+      <a class="to-top" href="#hero" aria-label="맨 위로 이동">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
