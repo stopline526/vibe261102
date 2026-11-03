@@ -1,0 +1,7 @@
+__pycache__/
+
+# 원본 데이터(KOSIS 엑셀)와 분석 결과물은 저장소에 올리지 않음
+data/
+output/
+*.csv
+*.xlsx
