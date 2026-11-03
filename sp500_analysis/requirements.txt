@@ -1,0 +1,5 @@
+pandas
+matplotlib
+PyQt6
+pyinstaller
+pillow

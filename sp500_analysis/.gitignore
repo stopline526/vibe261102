@@ -1,0 +1,10 @@
+__pycache__/
+build/
+dist/
+*.spec
+*.csv
+*.xlsx
+
+# 분석 결과물 (PNG, 정제 CSV) / 배포용 압축파일
+output/
+release/
