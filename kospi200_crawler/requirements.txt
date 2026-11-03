@@ -1,0 +1,5 @@
+requests
+openpyxl
+PyQt6
+pyinstaller
+pillow
